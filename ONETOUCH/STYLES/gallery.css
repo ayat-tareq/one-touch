@@ -1,0 +1,359 @@
+*{
+
+  margin: 0;
+  padding: 0
+  FONT-family:SANS-serif;
+}
+*, *:before, *:after {
+	margin: 0;
+	padding: 0;
+
+	-webkit-box-sizing: border-box !important;
+	-moz-box-sizing: border-box !important;
+	-ms-box-sizing: border-box !important;
+	box-sizing: border-box !important;
+}
+.section-header{
+font-family: 'Roboto', sans-serif;
+font-weight: 500;
+font-size: 58px;
+line-height: 58px;
+
+
+}
+
+.logo-img{
+  width:70px; height:70px;
+}
+.margin-left{
+  margin-left: 15vw;
+}
+.main{
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.main .main-cover{
+  width:100%;
+height: 80vh;
+box-sizing: border-box;
+  background-image:url("A2.jpg");
+
+
+ background-attachment:scroll;
+ background-position: center center;
+ background-repeat: no-repeat;
+ background-size: cover;
+display: flex;
+justify-content: flex-start;
+align-items: center;
+
+}
+.main .main-cover .content
+{
+margin-left: 5%;
+  background-color:#262a41cf;
+  height: 100%;
+  width: 40vw;
+
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+padding-right: 7%;
+}
+.main .main-cover .content ::before{
+  content: "";
+    position: absolute;
+    width: 60px;
+    height: 8px;
+    background: #e19e35;
+  top: 41%;
+
+}
+.main .gallery{
+  position: relative;
+  height: auto;
+  width: 90%;
+  margin: auto;
+  padding: 45px 0;
+  display:grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 2vmin;
+  grid-auto-flow: dense;
+}
+.main .gallery .img{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+
+
+}
+.main .gallery .img:first-child{
+grid-column-start: span 2;
+grid-row-start: span 1;
+}
+.main .gallery .img:nth-child(2n+3){
+grid-row-start: span 1;
+}
+.main .gallery .img:nth-child(4n+5){
+  grid-column-start: span 2;
+  grid-row-start: span 1;
+}
+.main .gallery .img:nth-child(6n+7){
+  grid-row-start: span 2;
+}
+.main .gallery .img:nth-child(8n+9){
+  grid-column-start: span 1;
+  grid-row-start: span 1;
+}
+
+.main .gallery .img img{
+  height: 100%;
+  width: 100%;
+  object-fit:cover;
+  border-radius: 22px;
+  /* filter: brightness(.5) grayscale(100);
+  transition: .3s ease-in-out; */
+}
+.main .gallery .img img:hover {
+cursor: pointer;
+/* transform: scale(1); */
+
+/* filter: brightness(1) grayscale(0); */
+
+}
+
+.light-boxes{
+  position: fixed;
+  top:0;
+  left:0;
+  width:100vw;
+  height: 100vh;
+  background: rgba(0,0,0,.5);
+  /* display: flex; */
+z-index: 1021;
+  align-items: center;
+  justify-content: center;
+display: none;
+
+}
+.light-boxes .lightbox{
+  position: relative;
+}
+.lightbox .light-box-content{
+
+  width: 100%;
+  text-align: center;
+
+}
+.light-boxes .light-box-content .detail-image{
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: white;
+width: auto;
+height: auto;
+max-width: 95vw;
+max-height: 65vh;
+
+
+}
+
+.light-boxes .light-box-content .close {
+  color: white;
+  position: absolute;
+  top:0%;
+  right: 5%;
+  font-size: 40px;
+  font-weight: bold;
+    cursor: pointer;
+    /* background: rgba(0,0,0,.5);
+    border-radius: 50%; */
+    color: rgba(0,0,0,.4);
+    outline-color: black;
+
+}
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 38%;
+  width: auto;
+  padding: 16px;
+
+  color: rgba(0,0,0,.5);
+  font-weight: bold;
+  font-size: 35px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 6%;
+  border-radius: 3px 0 0 3px;
+}
+.prev{
+  left:6%;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,.prev:focus,
+.next:hover,.next:focus {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media only screen and (max-width: 992px) {
+
+.main .main-cover{
+height: 60Vw;
+background-image: url("33.jpg");
+background-position:  center center
+;
+background-attachment:scroll;
+background-size:cover ;
+}
+
+.main .main-cover .content{
+  padding-right: 3%;
+  margin-left: 0;
+
+}
+.main .main-cover .content ::before{
+
+  top: 41%;
+
+}
+.main .gallery{
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+
+
+
+}
+/* @media  (max-width: 815px) and (max-height: 380px) {
+
+  .lightbox .light-box-content{
+
+    margin-top: 2%;
+  }
+  .light-boxes .light-box-content .detail-image{
+
+    width: 75%;
+
+
+  }
+  .light-boxes .light-box-content .close {
+    top:3%;
+    color:black;
+  right: 14%}
+
+} */
+
+@media only screen and (max-width: 767px) {
+  .main .main-cover .content ::before{
+
+    top: 32%;
+
+  }
+
+
+}
+
+@media only screen and (max-width: 576px) {
+  .margin-left{
+    margin-left:0;
+  }
+  .logo-img{
+    width:65px; height:65px;
+  }
+  .navbar-brand {
+    font-size: 1rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+.main .main-cover{
+height: 45Vh;
+background-image: url("22.jpg");
+background-position: center bottom;
+background-attachment:scroll;
+background-size:cover ;
+}
+.main .main-cover .content{
+  padding-right: 5%;
+  width: 50vw;
+}
+.main .main-cover .content ::before{
+  width: 45px;
+height: 5px;
+  top: 35%;
+
+}
+.main .gallery{
+  display: grid;
+  grid-template-columns: auto auto ;
+}
+.section-header{
+font-family: 'Roboto', sans-serif;
+font-weight: 500;
+font-size: 30px;
+line-height: 40px;
+
+
+}
+
+}
+@media  (max-width: 576px) and (max-height: 320px) {
+  .main .main-cover{height: 50Vw; }
+  .lightbox .light-box-content{
+
+    margin-top: 3%;
+  }
+}
+
+@media only screen and (max-width: 375px ) {
+
+  .margin-left{
+    margin-left: 0;
+  }
+
+  .logo-img{
+    width:55px; height:55px;
+  }
+  .navbar-brand {
+
+    font-size: .8rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+.main .main-cover{
+height: 40VH;
+background-image: url("11.jpg");
+background-position: center bottom;
+background-attachment:scroll;
+background-size:cover ;
+}
+.main .main-cover .content ::before{
+height: 3px;
+WIDTH:40PX;
+
+
+}
+
+
+}
+@media  (max-width: 375px) and (max-height: 812px) {
+  .main .main-cover{height: 35vh; }
+
+}
