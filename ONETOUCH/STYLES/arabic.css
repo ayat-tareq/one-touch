@@ -437,7 +437,7 @@ color: #e19e35;
     flex-direction: row-reverse;
   }
   .navbar-expand-lg .navbar-collapse {
-    justify-content: space-between;
+    justify-content: space-around;
   }
   /* NOTE: fonts */
 
@@ -597,6 +597,6 @@ color: #e19e35;
 }
 @media only screen and (min-width: 1024px) {
   .margin-left {
-    margin-left: 0vw !important;
+    margin-left: 50px !important;
   }
 }
