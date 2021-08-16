@@ -591,11 +591,10 @@ color: #e19e35;
     background-color: #e19e35 !important;
     border-color: #e19e35;
   }
-  /* NOTE: THIS IS THE END OF FACEBOOK SECTION */
-
-  /* NOTE: start of gallary section */
-
-  /* NOTE: end of gallery section */
-
-  /* NOTE: end of media query */
+  
+}
+@media only screen and (min-width: 1024px) {
+  .margin-left {
+    margin-left: 0vw !important;
+  }
 }
