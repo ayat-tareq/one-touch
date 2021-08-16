@@ -433,7 +433,7 @@ color: #e19e35;
     border-radius: 0.2rem;
   }
   .navbar-expand-lg .navbar-collapse {
-    justify-content: space-around;
+    justify-content: space-between;
   }
   /* NOTE: fonts */
 
