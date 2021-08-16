@@ -300,9 +300,7 @@ h5 {
   .navbar-expand-lg .navbar-nav {
     flex-direction: row-reverse;
   }
-  .navbar-expand-lg .navbar-collapse {
-    justify-content: space-around;
-  }
+  
   .head1 {
     font-size: 18px;
     line-height: 0.9;
@@ -436,6 +434,9 @@ color: #e19e35;
     font-size: 1.5rem;
     line-height: 1.5;
     border-radius: 0.2rem;
+  }
+  .navbar-expand-lg .navbar-collapse {
+    justify-content: space-around;
   }
   /* NOTE: fonts */
 
