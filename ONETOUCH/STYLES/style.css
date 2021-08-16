@@ -308,9 +308,7 @@ h5 {
   .head4 {
     font-size: 14px;
   }
-  .navbar-expand-lg .navbar-collapse {
-    justify-content: space-around;
-  }
+  
   .section-header {
     font-size: 7vw;
   }
@@ -433,6 +431,9 @@ color: #e19e35;
     font-size: 1.5rem;
     line-height: 1.5;
     border-radius: 0.2rem;
+  }
+  .navbar-expand-lg .navbar-collapse {
+    justify-content: space-around;
   }
   /* NOTE: fonts */
 
